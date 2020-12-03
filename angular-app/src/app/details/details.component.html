@@ -1,1 +1,12 @@
-<p>details works!</p>
+<style>
+    h1 {
+      margin: 20px 0;
+    }
+</style>
+<div>
+            <div mat-line>{{product ? product.name : ''}}</div>
+            <div mat-line>{{product ? product._id : ''}}</div>
+            <div mat-line>{{product ? product.description : ''}}</div>
+            <div mat-line>{{product ? product.deadline : ''}}</div>
+
+</div>

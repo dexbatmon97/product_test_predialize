@@ -7,14 +7,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import{MaterialModule} from './module.material';
 import { DetailsComponent } from './details/details.component';
 import { OrderFormComponent } from './order-form/order-form.component';
+import { HomeComponent } from './home/home.component';
 
-const routes: Routes = [];
+
+const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'details/:id', component: DetailsComponent },
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     DetailsComponent,
     OrderFormComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

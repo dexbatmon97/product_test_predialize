@@ -1,31 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import { Component } from '@angular/core';
 
-import{ProductsService} from './data/products.service';
-import{Post} from './model/post'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title='lista';
-  posts:Post[]=[];
 
-   
-
-    constructor(public ProductsService: ProductsService){}
-  ngOnInit() {
-    this.ProductsService.getPosts()
-
-    /*.subscribe(
-      posts =>{
-      console.log(posts);
-      this.posts= posts;
-      },
-      err=>console.log(err)
-    )*/
-  }
+    constructor(){}
   
 
 }
