@@ -1,6 +1,6 @@
 export interface Product{
-    _id: String,
-    name: String,
-    description: String,
-    deadline: String,
+    _id: string,
+    name: string,
+    description: string,
+    deadline: string,
 }

@@ -8,5 +8,15 @@
             <div mat-line>{{product ? product._id : ''}}</div>
             <div mat-line>{{product ? product.description : ''}}</div>
             <div mat-line>{{product ? product.deadline : ''}}</div>
+            <button routerLink="/home" routerLinkActive="active">Back</button>
+            <button [disabled]="createTicketDisabled" (click)="createTicket()">Create ticket</button>
+
+            <mat-list>
+                <mat-list-item *ngFor="let ticket of tickets">
+                    <div mat-line>{{ticket.dateOfCreation}}</div>
+                    <div mat-line>{{ticket.status}}</div>
+                </mat-list-item>
+             </mat-list>
+
 
 </div>
