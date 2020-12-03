@@ -1,3 +1,11 @@
+ <!-- Highlight Card -->
+
+
+  <!-- Resources -->
+  <h2>These are you current products</h2>
+
+  
+
 <mat-action-list>
     <button *ngFor="let product of products" mat-list-item [routerLink]="['/details', product._id]" routerLinkActive="active" >
         <div mat-line>{{product.name}}</div>

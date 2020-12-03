@@ -11,6 +11,8 @@
             <button routerLink="/home" routerLinkActive="active">Back</button>
             <button [disabled]="createTicketDisabled" (click)="createTicket()">Create ticket</button>
 
+            <h3>tickets</h3>
+
             <mat-list>
                 <mat-list-item *ngFor="let ticket of tickets">
                     <div mat-line>{{ticket.dateOfCreation}}</div>
